@@ -1,0 +1,12 @@
+ {{title}}
+<p>Valor A: {{numeroA()}}</p>
+<p>Valor B: {{numeroB()}}</p>
+<h1>El resultado es: {{resultado()}}</h1>
+<form (ngSubmit)="suma()">
+  <input 
+    [ngModel]="numeroB()" 
+    (ngModelChange)="numChange($event)" 
+    name="inputNumeroB">
+    
+  <button type="submit">Sumar</button>
+</form>
